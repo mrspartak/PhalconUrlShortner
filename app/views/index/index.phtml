@@ -1,0 +1,30 @@
+{% extends "layouts/main.phtml" -%}
+
+{% block content %}
+
+{% include "errors/messages.phtml" %}
+<div class="row">
+	<div class="col-lg-3 col-md-2"></div>
+  <div class="col-lg-6 col-md-8 panel">
+  	<div class="panel-heading">Add your url to make it shorter</div>
+    <div class="panel-body">
+      <form>
+				<div class="input-group">
+          <input type="text" class="form-control no-border-radius long_url" placeholder="Long url">
+          <span class="input-group-btn">
+            <button class="btn btn-default no-border-radius action_button" type="button" onClick="App.data.get.shortUrl();"><span class="glyphicon glyphicon-arrow-right"></span></button>
+            <button class="btn btn-default no-border-radius reset_button btn-info hidden" type="button" onClick="App.page.resetForm();"><span class="glyphicon glyphicon glyphicon-refresh"></span></button>
+          </span>
+          <input type="text" class="form-control no-border-radius short_url" placeholder="Short url" disabled>
+				</div>
+      </form>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-2"></div>
+</div>
+
+<script>
+App.vr.user.url = '{{ url }}'
+App.init();
+</script>
+{% endblock %}

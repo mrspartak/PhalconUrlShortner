@@ -1,0 +1,26 @@
+.text-center{ text-align:center }
+.vertical-resize {resize:vertical !important;}
+.well-vsm {padding: 9px;border-radius: 3px;margin-bottom: 0px;}
+.margin-bottom-6 {margin-bottom:6px;}
+.padding-bottom-10 {padding-bottom:10px;}
+.padding-bottom-14 {padding-bottom:14px;}
+.no-decoration {text-decoration: none !important;}
+.no-border-radius {border-radius:0 !important;}
+
+.glyphicon, .caret {line-height:inherit;}
+#recaptcha_area, #recaptcha_table, .recaptchatable, #recaptcha_response_field { line-height: normal !important;}
+
+hr {
+  border-color: #ccc;
+}
+
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.contain {
+	width: 600px;
+	margin:0 auto;
+}
